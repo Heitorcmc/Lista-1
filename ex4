@@ -6,7 +6,7 @@ int main(void) {
 
   printf("Qual foi a sua nota: ");
   scanf("%f", &nota);
-  if (nota >= 8 && nota <= 10) {
+  if (nota >= 8 && nota <= 10) { //indentifica a nota e atribui a ela se foi otima boa regular ou insatisfatoria
     printf("Nota Ótima");
   } else if (nota >= 7 && nota < 8) {
     printf("Nota Boa");
