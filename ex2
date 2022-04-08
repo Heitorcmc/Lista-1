@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) {
+  int x,y, soma;
+  printf("DIgite dois numeros: ");
+  scanf ("%d %d", &x,&y);//indentificou os dois numeros pra somar
+  soma= x+y;
+  // indentificar e executar o comendo se for maior ou menor de 10
+  if (soma>=10){ 
+    soma= soma+5;
+  } else{
+    soma= soma+7;
+  }
+  printf ("o resultado é %d", soma);
+  return 0;
+}
