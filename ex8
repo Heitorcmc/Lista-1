@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(void) {
+  float salario, salarioa;
+  char op;
+  printf("Qual o salario e a opcao de aumento? ");
+  scanf("%f %c", &salarioa, &op); // indentificar as varriaveis
+  switch (op) {
+    case ('A'): //caso a para aumentar 8%
+    salario= salarioa*1.08;
+    break;
+    case ('B'): //caso b para aumentar 11%
+    salario= salarioa*1.11;
+    break;
+    case ('C'): //caso c para aumentar 350 para menores de 1000 e 200 para maiores de 1000
+    if (salarioa<=1000){
+      salario=salarioa+350;
+    } else {
+      salario=salarioa=200;}
+      break;
+    }
+    printf ("O novo salario é %.2f", salario);
+  
+  return 0;
+}
