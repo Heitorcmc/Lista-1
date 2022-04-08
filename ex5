@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(void) {
+  float v, vp, vtp8, vtn5, dif, aps;
+
+  aps= 75;
+  
+    printf("Qual o valor da diaria:");
+     scanf("%f", &v);
+  
+  vp=v*0.75;
+  vtp8=aps*0.8*vp;
+  vtn5=aps*0.5*v;
+  dif=vtp8-vtn5;
+  
+  printf("O valor promocional é: %.1f\n", vp);
+  printf("O valor total com diaria promocional e 0.8 da capacidade é:%.1f\n", vtp8);
+  printf("O valor total com a diaria normal e 0.5 da capacidade é:%.1f\n", vtn5);
+  printf("A diferença de valor entre a diaria promocional e a normal é:%.1f\n", dif);
+    
+   return 0;
+}
