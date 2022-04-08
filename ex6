@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void) {
+  float a, b, x;
+  
+  printf("Escreva os coeficientes: ");
+  scanf("%f %f", &a, &b);
+  
+  x=-b/a;
+  if (a==0) {
+    printf ("raiz inexistente");
+      }else{
+    printf("a raiz é: %f", x);
+      }
+
+return 0;
+}
