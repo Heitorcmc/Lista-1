@@ -7,7 +7,7 @@ int main(void) {
   scanf("%f %f", &a, &b);
   
   x=-b/a;
-  if (a==0) {
+  if (a==0) { // faz a conta da raiz da equacao e indentifica se existe raiz ou nao
     printf ("raiz inexistente");
       }else{
     printf("a raiz é: %f", x);
