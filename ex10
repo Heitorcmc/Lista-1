@@ -1,0 +1,17 @@
+ #include <stdio.h>
+
+int main(void) {
+  int vel, velmax;
+  printf("Qual a velocidade do carro e a velocidade maxima da rodovia? ");
+  scanf("%d %d", &vel, &velmax);
+  if (velmax<vel && vel<=velmax+10){ // indentifica a velocidade e printa o valor da multa 
+    printf ("A multa foi de 50 reais");
+  } else if (velmax+10<vel && vel<=velmax+30){
+    printf ("A multa foi de 100 reais");
+  } else if (vel>velmax+30){
+   printf("A multa foi de 200 reais");
+  }else{
+    printf ("O motorista respeitou a lei\n");
+  }
+  return 0;
+}
