@@ -4,7 +4,7 @@ int main(void) {
   int x,y;
   printf("Digite dois numeros:");
   scanf("%d %d", &x,&y);
-  if (x>y){
+  if (x>y){  // indentifica os dios numeros e printa o maior
     printf ("%d", x);
   } else {
     printf ("%d",y);
