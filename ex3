@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(void) {
+  int idade, ano;
+  char op;
+  printf ("Qual o ano que voce nasceu e ja fez aniversario esse ano? ");
+  scanf ("%d %c", &ano, &op); // indentificando o ano e se ja fez aniversario
+  switch (op) { //colocar se ja fez ou nao aniversario e fazer a conta
+    case ('S'):
+    case ('s'):
+     idade= 2022 -ano;
+    break;
+    case ('N'):
+    case ('n'):
+     idade= 2021 -ano;
+    break;
+    default: 
+    printf ("\nComando Invalido");
+     break; 
+  }
+  if (idade>=18){ // se a a idade for maior ou menor de 18 oque fazer
+    printf ("Voce e maior de idade e pode tirar a carteira ");
+   } else {
+    printf ("Voce e menor de idade e nao pode tirar a carteira ");
+   }
+    
+  return 0;
+}
