@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(void) {
+  char sinal;
+  printf ("Digite um sinal: ");
+  scanf ("%c", &sinal); // indentificar o sinal
+  
+  switch (sinal) { // colocar o sinal e indentificar o nome
+    case '=':
+      printf ("\nsinal de igual");
+    break;
+    case '<':
+    printf ("\n sinal de menor");
+    break;
+    case '>':
+    printf("\n sinal de maior");
+    break;
+    default:
+    printf("\noutro sinal");
+    break;
+  }
+    
+    
+  return 0;
+}
